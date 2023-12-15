@@ -2,7 +2,7 @@ import telebot
 import re
 from telebot import types
 
-token = '6911214567:AAF5mK6jOADeLzbyYFxt8gKdScESeLuvy5Q'
+token = '69'
 bot = telebot.TeleBot(token)
 
 @bot.inline_handler(func=lambda query: len(query.query) > 0)
@@ -35,4 +35,4 @@ def empty_query(query):
     except Exception as e:
         print(e)
 
-bot.infinity_polling()
+#bot.infinity_polling()
